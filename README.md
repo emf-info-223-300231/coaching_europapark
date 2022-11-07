@@ -1,4 +1,4 @@
-# coaching_europapark
+# Coaching Europapark
 Exercice de coaching formatif sur le thème du parc d'attraction Europapark
 ## 1.	Travail préliminaire 
 Récupérez le projet en réalisant un clone de ce repository. La base de données MySQL se trouve dans le répertoire « data ». 
