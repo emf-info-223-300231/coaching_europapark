@@ -22,7 +22,7 @@ Renommez le projet et le dossier avec votre nom (Ex: 223_europapark_ramalho)
 - Il est nécessaire de rajouter une méthode dans JpaDao pour le filtre. Voici une proposition de signature de méthode : **public List\<E\> filtrer(String nomChamp, Object valeur);**. Cette méthode doit être utilisable pour d’autres filtres simples (avec une condition)
 - Il y a deux fenêtres dans l'application, le MainCtrl ouvre l'EditCtrl avec la méthode ouvrirFenetre().
 
-4.	Maquette de l’application
+## 4.	Maquette de l’application
 ![image](https://user-images.githubusercontent.com/3630367/200251156-de29c0f7-b603-4cd3-ab00-8eb0b892c55a.png)
 Fig 1 : Fenêtre de démarrage : liste des attractions
 
@@ -35,7 +35,7 @@ En cliquant sur Afficher, il n'y a que le bouton OK
 En cliquant sur Modifier ou Ajouter, il y a le bouton Sauver et Annuler  
 ![image](https://user-images.githubusercontent.com/3630367/200251276-65c01c01-0171-47c3-a8c9-c72cde847d11.png)
 
-5.	Tests
+## 5.	Tests
 Je vous demande de faire deux **tests unitaires** (voir ci-dessous) sur deux méthodes que vous avez rajoutées dans la classe DbWorker. Pour le deuxième test, vous devez prendre le niveau de sensation Faibles.
 ![image](https://user-images.githubusercontent.com/3630367/200251315-bf2d4f35-d7db-4afe-b81c-7d85a53f2384.png)
 
