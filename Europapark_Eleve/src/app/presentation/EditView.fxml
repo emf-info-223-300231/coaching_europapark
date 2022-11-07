@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="670.0" prefWidth="600.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.presentation.EditCtrl">
+   <center>
+      <GridPane prefHeight="675.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="6.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label-bright" text="Nom de l'attraction" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="label-bright" text="Description" GridPane.rowIndex="2" />
+            <TextArea fx:id="txtDescription" maxHeight="80.0" prefHeight="40.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="label-bright" text="Âge minimum" GridPane.rowIndex="3" />
+            <Label styleClass="label-bright" text="Taille minimum" GridPane.rowIndex="4" />
+            <Label styleClass="label-bright" text="Sensation" GridPane.rowIndex="5" />
+            <Label styleClass="label-bright" text="Lieu" GridPane.rowIndex="6" />
+            <Label styleClass="label-bright" text="Saison" GridPane.rowIndex="7" />
+            <Slider fx:id="sldAge" blockIncrement="1.0" majorTickUnit="1.0" max="14.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="label-bright" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Slider fx:id="sldTaille" majorTickUnit="10.0" max="140.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" styleClass="label-bright" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comLieu" maxWidth="400.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="comSaison" maxWidth="400.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label styleClass="label-bright" text="Année" GridPane.rowIndex="8" />
+            <Label styleClass="label-bright" text="Durée" GridPane.rowIndex="9" />
+            <Label styleClass="label-bright" text="Capacité" GridPane.rowIndex="10" />
+            <Label styleClass="label-bright" text="Capacité horaire" GridPane.rowIndex="11" />
+            <TextField fx:id="txtDuree" maxWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label styleClass="label-bright" text="Constructeur" GridPane.rowIndex="12" />
+            <TextField fx:id="txtCapacite" maxWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="txtCapaciteHoraire" maxWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" GridPane.columnSpan="2" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <children>
+                  <Button fx:id="btnSauver" mnemonicParsing="false" onAction="#sauverAttraction" text="Sauver" />
+                  <Button fx:id="btnAnnuler" alignment="CENTER" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+               </children>
+            </HBox>
+            <ComboBox fx:id="comSensation" maxWidth="400.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="comConstructeur" maxWidth="400.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="txtAnnee" maxWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
